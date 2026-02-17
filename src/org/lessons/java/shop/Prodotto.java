@@ -20,4 +20,54 @@ public class Prodotto {
         this.prezzo = prezzo;
         this.iva = iva;
     }
+
+    // Codice
+    public String getCodice() {
+        String output = String.format("Il codice del prodotto %s è %d", this.nome, this.codice);
+        return output;
+    }
+
+    // Nome
+    public String getNome() {
+        return this.nome;
+    }
+
+    public void setNome(String nome) {
+        if(nome != null && !nome.equals("")) {
+            this.nome = nome;
+        }
+    }
+
+    // Marca
+    public String getMarca() {
+        return this.marca;
+    }
+
+    public void setMarca(String marca) {
+        if(marca != null && !marca.equals("")) {
+            this.marca = marca;
+        }
+    }
+
+    // prezzo
+    public BigDecimal getPrezzo() {
+        return this.prezzo;
+    }
+
+    public void setPrezzo(BigDecimal prezzo) {
+        if(prezzo.compareTo(BigDecimal.ZERO) > 0) {
+            this.prezzo = prezzo;
+        }
+    }
+
+    // iva
+    public BigDecimal getIva() {
+        return this.iva;
+    }
+
+    public void setIva(BigDecimal iva) {
+        if(iva.compareTo(BigDecimal.ZERO) > 0) {
+            this.iva = iva;
+        }
+    }
 }
