@@ -35,4 +35,10 @@ class Smarphone extends Prodotto {
             this.memoria = memoria;
         }
     }
+
+    // toString
+    @Override
+    public String toString() {
+        return String.format("Hai inserito lo smarphone %s, della marca %s, con una memoria di %dGB, al prezzo di %s", this.nome, this.marca, this.memoria, this.prezzo);
+    }
 }

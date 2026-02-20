@@ -40,4 +40,10 @@ class Cuffie extends Prodotto {
         this.tipologia = tipologia;
     }
 
+    // toString
+    @Override
+    public String toString() {
+        return String.format("Hai inserito le cuffie %s, della marca %s, di colore %s, al prezzo di %s", this.nome, this.marca, this.colore, this.prezzo);
+    }
+
 }
